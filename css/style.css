@@ -1,0 +1,184 @@
+
+body {
+    background-color: black;
+    /* als iemand de gif niet heeft dan is de achtergrond alsnog zwart */
+    background: url('../images/fallingdice.gif') no-repeat center center fixed;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    margin: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /*vh = relatieve eenheid die wordt gebruikt om de hoogte van elementen te definiëren in verhouding tot de hoogte van het viewport */
+}
+
+#game-container {
+    background-color: rgb(247, 193, 247);
+    padding: 50px;
+    border-radius: 10px;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+    font-family: Arial, sans-serif;
+}
+
+#highscore {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: black;
+    border: 2px solid black;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: rgba(242, 223, 250, 0.8);
+}
+
+.dice-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.dice-one,
+.dice-two {
+    font-size: 80px;
+}
+
+#button-higher,
+#button-lower,
+#start-button {
+    background-color: rgb(197, 148, 243);
+    border-color: blueviolet;
+    color: black;
+    padding: 10px;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#button-higher:hover,
+#button-lower:hover,
+#start-button:hover {
+    background-color: rgb(168, 7, 243);
+    color: white;
+}
+
+#button-higher:disabled,
+#button-lower:disabled {
+    cursor: not-allowed;
+    color: #0a0a0a;
+    background-color: rgb(197, 148, 243);
+    border-color: blueviolet;
+}
+
+#won-round,
+#lost-round {
+    padding: 5px;
+    color: rgb(0, 0, 0);
+}
+
+#score-display {
+    display: block;
+    margin-top: 10px;
+    color: black;
+}
+
+#click-amount {
+    margin-top: 0px;
+}
+
+.score-negative {
+    color: red;
+}
+
+.score-positive {
+    color: green;
+}
+
+#restart-round-button {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+#button-restart-round {
+    background-color: rgb(92, 198, 247);
+    border-color: blue;
+}
+
+#button-restart-round:hover {
+    background-color: rgb(49, 49, 150);
+    color: white;
+}
+
+#message-won {
+    color: rgb(34, 158, 34);
+}
+
+#message-lost {
+    color: red;
+}
+
+.feedback-green {
+    color: green;
+}
+
+.feedback-red {
+    color: red;
+}
+
+.rules-button {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #b21ff7;
+    color: white;
+    padding: 5px 10px;
+    font-size: 12px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.rules-button:hover {
+    background-color: #d0a2ee;
+}
+
+.rules-panel {
+    display: none;
+    position: absolute;
+    top: 40px;
+    left: 10px;
+    width: 200px;
+    background-color: rgb(247, 193, 247);
+    border: 5px solid #7308b1;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.rules-panel p,
+.rules-panel ul {
+    font-size: 12px;
+    margin: 5px 0;
+}
+
+.rules-panel ul {
+    padding-left: 20px;
+}
+
+#dice-results-box {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    width: 90px;
+    background-color: rgba(65, 3, 73, 0.75);
+    color: white;
+    padding: 8px;
+    font-size: 8px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    display: none;
+}

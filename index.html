@@ -1,0 +1,83 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hoger Lager Game</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!--The highscore-->
+    <div id="game-container">
+        <h1 class="h1-container-top">Project Hoger Lager</h1>
+        <div id="highscore">
+            <table>
+                <tbody>
+                    <tr>
+                        <td id="click-amount">Kliks: 0</td>
+                    </tr>
+                    <tr>
+                        <td>Gewonnen:</td>
+                        <td id="win-amount">0</td>
+                    </tr>
+                    <tr>
+                        <td>Verloren:</td>
+                        <td id="lose-amount">0</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+ 
+        <p>Is de huidige waarde Hoger of Lager&trade; dan de waarde van de onzichtbare dobbelstenen?</p>
+         
+        <!--Deze button is de begin knop van het spel-->
+        <button id="start-button">Start het spel</button>
+       
+        <!--De afgebeelde dobbelstenen-->
+        <div class="dice-container">
+            <div class="dice-one">&#9857</div>
+            <div class="dice-two">&#9858</div>
+        </div>
+ 
+        <!--Weergeeft de score van de rondes-->
+        <div id="score-display">Score: 0</div>
+       
+        <!-- Hoger & Lager buttons-->
+        <button id="button-higher">Hoger</button>
+        <button id="button-lower">Lager</button>
+ 
+        <!--Weergeeft of je de ronde goed hebt geraden of niet-->
+        <div id="round-feedback"></div>
+        <div id="won-round" style="display: none;">Goed geraden!</div>
+        <div id="lost-round" style="display: none;">Helaas!</div>
+ 
+        <!--Weergeeft of je de game gewonnen hebt of niet -->
+        <div id="message-won"></div>
+        <div id="message-lost"></div>
+ 
+        <!--Start opnieuw knop na gewonnen of verloren ronde-->
+        <div id="restart-round-button">
+            <button id="button-restart-round" style="display: none;">Speel opnieuw</button>
+        </div>
+ 
+        <div id="dice-results-box"></div>
+    </div>
+ 
+    <!-- Spelregels knop -->
+    <button class="rules-button">Spelregels</button>
+    <div class="rules-panel">
+        <p>Welkom bij het Hoger Lager spel!</p>
+        <p>Spelregels:</p>
+        <ul>
+            <li>Klik op "Start het spel" om te beginnen.</li>
+            <li>Kies of de som van de zichtbare dobbelstenen hoger of lager is dan de onzichtbare dobbelstenen.</li>
+            <li>Goed geraden? Je krijgt 1 score punt. Fout geraden? Er gaat 1 score punt vanaf.</li>
+            <li>Druk je op hoger en is het getal gelijk aan het andere getal dan krijg je 1 punt. Druk je op lager en het getal is gelijk dan krijg je geen punt.</li>
+            <li>Het spel eindigt als je 10 punten (gewonnen) of -10 punten (verloren) hebt. Hierna kun je op de speel opnieuw knop drukken</li>
+            <li>Je kunt zien hoe vaak je het spel gewonnen of verloren hebt.</li>
+        </ul>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>
