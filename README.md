@@ -27,4 +27,4 @@ In dit spel draait alles om het voorspellen van de uitkomst van de dobbelstenen:
 * `js/main.js`: De kernlogica van het dobbelspel.
 
 ---
-*Ontwikkeld door [Jouw Naam] als onderdeel van mijn professionele ontwikkeling en stageportfolio.*
+*Ontwikkeld door Bercem als onderdeel van mijn professionele ontwikkeling en stageportfolio.*
